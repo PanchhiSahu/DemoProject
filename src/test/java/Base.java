@@ -40,6 +40,7 @@ public class Base {
 		WebDriver driver= getBrowserInstance(browserName);
 		driver.get("http://toolsqa.com/automation-practice-form/");
 		driver.getCurrentUrl();
+		System.out.println("driver.getCurrentUrl());
 		
 	}
 
