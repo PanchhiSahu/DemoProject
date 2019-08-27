@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallet Test Suite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.w2a.TestCases.BankManagerLogin">
+        <methods>
+          <include name="loginAsBankManager"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.BankManagerLogin -->
+      <class name="com.w2a.TestCases.AddCustomerTest">
+        <methods>
+          <include name="addNewCustomer"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.AddCustomerTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Parallet Test Suite] -->

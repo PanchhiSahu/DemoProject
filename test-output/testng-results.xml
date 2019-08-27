@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Suite" duration-ms="52036" started-at="2019-08-16T13:52:45Z" finished-at="2019-08-16T13:53:38Z">
+    <groups>
+      <group name="BankManagerLogin.loginAsBankManager">
+        <method signature="BankManagerLogin.loginAsBankManager()[pri:0, instance:com.w2a.TestCases.BankManagerLogin@7c729a55]" name="loginAsBankManager" class="com.w2a.TestCases.BankManagerLogin"/>
+      </group> <!-- BankManagerLogin.loginAsBankManager -->
+    </groups>
+    <test name="Chrome Test" duration-ms="52036" started-at="2019-08-16T13:52:45Z" finished-at="2019-08-16T13:53:38Z">
+      <class name="com.w2a.TestCases.BankManagerLogin">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:com.w2a.TestCases.BankManagerLogin@7c729a55]" name="loginAsBankManager" duration-ms="3344" started-at="2019-08-16T19:23:00Z" finished-at="2019-08-16T19:23:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+        <test-method status="PASS" signature="browserSetUp(java.lang.String)[pri:0, instance:com.w2a.TestCases.BankManagerLogin@7c729a55]" name="browserSetUp" duration-ms="3" started-at="2019-08-16T19:23:03Z" finished-at="2019-08-16T19:23:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+      </class> <!-- com.w2a.TestCases.BankManagerLogin -->
+      <class name="com.w2a.TestCases.AddCustomerTest">
+        <test-method status="PASS" signature="browserSetUp(java.lang.String)[pri:0, instance:com.w2a.TestCases.AddCustomerTest@47af7f3d]" name="browserSetUp" duration-ms="3" started-at="2019-08-16T19:23:00Z" finished-at="2019-08-16T19:23:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="addNewCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.TestCases.AddCustomerTest@47af7f3d]" name="addNewCustomer" duration-ms="9186" depends-on-groups="BankManagerLogin.loginAsBankManager" started-at="2019-08-16T19:23:03Z" data-provider="getData" finished-at="2019-08-16T19:23:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Panchhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sahu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201301.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="addNewCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.TestCases.AddCustomerTest@47af7f3d]" name="addNewCustomer" duration-ms="8464" depends-on-groups="BankManagerLogin.loginAsBankManager" started-at="2019-08-16T19:23:12Z" data-provider="getData" finished-at="2019-08-16T19:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pallavi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Goel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[210302.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="addNewCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.TestCases.AddCustomerTest@47af7f3d]" name="addNewCustomer" duration-ms="8511" depends-on-groups="BankManagerLogin.loginAsBankManager" started-at="2019-08-16T19:23:21Z" data-provider="getData" finished-at="2019-08-16T19:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shafaq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ziadi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[234678.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="addNewCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.TestCases.AddCustomerTest@47af7f3d]" name="addNewCustomer" duration-ms="8242" depends-on-groups="BankManagerLogin.loginAsBankManager" started-at="2019-08-16T19:23:29Z" data-provider="getData" finished-at="2019-08-16T19:23:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Astha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arora]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[685478.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+      </class> <!-- com.w2a.TestCases.AddCustomerTest -->
+      <class name="com.w2a.base.TestBase">
+        <test-method status="PASS" signature="browserSetUp(java.lang.String)[pri:0, instance:com.w2a.base.TestBase@6aba2b86]" name="browserSetUp" duration-ms="14136" started-at="2019-08-16T19:22:46Z" finished-at="2019-08-16T19:23:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+      </class> <!-- com.w2a.base.TestBase -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Test Suite -->
+</testng-results>

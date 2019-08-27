@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.w2a.TestCases.AddCustomerTest">
+        <methods>
+          <include name="addNewCustomer" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.AddCustomerTest -->
+      <class name="com.w2a.TestCases.BankManagerLogin">
+        <methods>
+          <include name="loginAsBankManager"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.BankManagerLogin -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

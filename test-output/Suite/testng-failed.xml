@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.w2a.base.TestBase">
+        <methods>
+          <include name="browserClose"/>
+        </methods>
+      </class> <!-- com.w2a.base.TestBase -->
+      <class name="com.w2a.TestCases.BankManagerLogin">
+        <methods>
+          <include name="loginAsBankManager"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.BankManagerLogin -->
+      <class name="com.w2a.TestCases.AddCustomerTest">
+        <methods>
+          <include name="addNewCustomer" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.AddCustomerTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.w2a.base.TestBase">
+        <methods>
+          <include name="browserClose"/>
+        </methods>
+      </class> <!-- com.w2a.base.TestBase -->
+      <class name="com.w2a.TestCases.BankManagerLogin">
+        <methods>
+          <include name="loginAsBankManager"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.BankManagerLogin -->
+      <class name="com.w2a.TestCases.AddCustomerTest">
+        <methods>
+          <include name="addNewCustomer" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.w2a.TestCases.AddCustomerTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

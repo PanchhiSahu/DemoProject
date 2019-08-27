@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Chrome Test"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.406">
+  <properties />
+  
+  
+            <testcase name="addNewCustomer" time="8.464" classname="com.w2a.TestCases.AddCustomerTest" />
+                <testcase name="addNewCustomer" time="8.242" classname="com.w2a.TestCases.AddCustomerTest" />
+                <testcase name="addNewCustomer" time="8.511" classname="com.w2a.TestCases.AddCustomerTest" />
+                <testcase name="browserSetUp" time="0.003" classname="com.w2a.TestCases.AddCustomerTest" />
+                <testcase name="addNewCustomer" time="9.186" classname="com.w2a.TestCases.AddCustomerTest" />
+      
+</testsuite>
